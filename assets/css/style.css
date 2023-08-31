@@ -1,0 +1,129 @@
+/* Barra de navegacion */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+/* Estilos generales*/ 
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+.texto-negro {
+  color: black;
+}
+.texto-blanco {
+  color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Shantell Sans', cursive;
+}
+.seccion-texto {
+  font-size: 1.2rem;
+}
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  font-weight: bold;
+}
+ /* Estilo Seccion Principal*/
+
+.principal {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+  }
+  
+.principal-principal {
+    padding: 0rem;
+  }
+  
+.principal-imagen {
+    width: 400px;
+    margin: 20px;
+  }
+.principal-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+  }
+ @media screen and (min-width: 700px) {
+    .principal-inferior-imagen {
+      max-width: 600px 
+    }
+  }
+/* Estilo Seccion Sobre nosotros*/
+
+.sobre-nosotros {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-nosotros .contenedor {
+  max-width: 600px;
+  text-align: center; 
+}
