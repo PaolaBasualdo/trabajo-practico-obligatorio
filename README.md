@@ -2,7 +2,7 @@
 Trabajo Practico Obligatorio CAC Pyton Font End 2023
 # Sitio Web del Movimiento Antinuclear de la República Argentina
 
-¡Bienvenidos al sitio web oficial del **Movimiento Antinuclear de la República Argentina (M.A.R.A.)**! Aquí encontrarás información de calidad y actualizada sobre la industria nuclear en Argentina y en todo el mundo.
+¡Bienvenidos al sitio web oficial del **Movimiento Antinuclear de la República Argentina (M.A.R.A.)**! Aquí encontrarás información de calidad y actualizada sobre el impacto en el ambiente y la sociedad de la industria nuclear en Argentina y el mundo.
 
 ## Proyecto en Construcción
 
@@ -21,7 +21,6 @@ Este sitio web ha sido desarrollado utilizando tecnologías modernas para garant
 
 - **HTML5:** Estructura semántica que asegura la accesibilidad y legibilidad del contenido.
 - **CSS:** Estilos cuidadosamente diseñados para una presentación agradable y coherente en todos los dispositivos.
-- **Bootstrap:** Framework CSS que facilita el diseño responsivo y la creación de interfaces atractivas.
 - **JavaScript:** Interacciones dinámicas y mejoras en la experiencia del usuario.
 
 ## Cómo Contribuir
@@ -35,6 +34,11 @@ Este sitio web ha sido desarrollado utilizando tecnologías modernas para garant
 ## Contacto
 
 Si tienes preguntas, sugerencias o deseas ponerte en contacto con el equipo del M.A.R.A., puedes enviarnos un correo electrónico a somoselmara@gmail.com o llenar el formulario de contacto en nuestro sitio web.
+
+## Autores
+Paola Ivana Basualdo
+
+## Agradecimientos
 
 ¡Gracias por unirte a la lucha por un futuro seguro y libre de energía nuclear!
 
