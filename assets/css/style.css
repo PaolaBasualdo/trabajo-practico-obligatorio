@@ -1,20 +1,23 @@
 /* Barra de navegacion */
 .navbar {
-    background-color: #333;
+    background-color: white;
+    width: 100%;
     overflow: hidden;
+    font-family: 'Shantell Sans', cursive;
+    position: fixed;
   }
   
   .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   .navbar a:hover {
-    background-color: #ddd;
+    background-color:white;
     color: black;
   }
   
@@ -50,10 +53,15 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 h1 {
   font-size: 3rem;
+  font-family: 'Shantell Sans', cursive;
+}
+h2 {
+  font-size: 1.5rem;
   font-family: 'Shantell Sans', cursive;
 }
 
@@ -86,11 +94,7 @@ h1 {
   color: #584e4e;
 }
 
-.btn-info {
-  font-size: 1.1rem;
-  margin: 20px;
-  font-weight: bold;
-}
+
  /* Estilo Seccion Principal*/
 
 .principal {
@@ -104,7 +108,7 @@ h1 {
   }
   
 .principal-imagen {
-    width: 400px;
+    width: 600px;
     margin: 20px;
   }
 .principal-principal h2 {
@@ -126,4 +130,8 @@ h1 {
 .sobre-nosotros .contenedor {
   max-width: 600px;
   text-align: center; 
+}
+/*Estilo Seccion Contacto*/
+.contacto-formulario {
+  padding: 50px 16px;
 }
