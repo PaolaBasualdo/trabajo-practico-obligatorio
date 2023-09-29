@@ -3,7 +3,7 @@
     background-color: white;
     width: 100%;
     overflow: hidden;
-    font-family: 'Shantell Sans', cursive;
+    font-family: 'Nunito Sans', sans-serif;
     position: fixed;
   }
   
@@ -12,7 +12,7 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
   }
   
@@ -46,92 +46,212 @@
     display: block;
     text-align: left;
   }
-/* Estilos generales*/ 
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
+  /* Estilos generales*/
+*{ margin: 0;
+   padding: 0;
 }
-
+body {
+	background: #E9ECF4;
+	color: #000;
+	font-family: 'Nunito Sans', sans-serif;
+}
 h1 {
   font-size: 3rem;
-  font-family: 'Shantell Sans', cursive;
+  font-family: 'Nunito Sans', sans-serif;
 }
 h2 {
   font-size: 1.5rem;
-  font-family: 'Shantell Sans', cursive;
+  font-family: 'Nunito Sans', sans-serif;
 }
-
-.seccion-oscura {
-  color: white;
-  background-color: #1b1b32;
+h3 {
+  font-size: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
 }
-
-.seccion-clara {
-  color: black;
-  background-color: white;
-}
-.texto-negro {
-  color: black;
-}
-.texto-blanco {
-  color: white;
-}
-
-.seccion-titulo {
-  font-size: 2rem;
-  padding: 15px 0;
-  font-family: 'Shantell Sans', cursive;
-}
-.seccion-texto {
-  font-size: 1.2rem;
-}
-.seccion-descripcion {
-  font-size: 1.2rem;
-  color: #584e4e;
-}
-
-
- /* Estilo Seccion Principal*/
-
-.principal {
-  background-color: #f5f6f7;
-  min-height: 450px;
+/*Encabezado*/
+.encabezado {
+	background: #fff;
+	color: #12203E;
   text-align: center;
-  }
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  width: 90%;
+  margin: 20px auto;
   
-.principal-principal {
-    padding: 0rem;
-  }
-  
-.principal-imagen {
-    width: 600px;
-    margin: 20px;
-  }
-.principal-principal h2 {
-    font-size: 1.5rem;
-    color: #615151;
-  }
- @media screen and (min-width: 700px) {
-    .principal-inferior-imagen {
-      max-width: 600px 
-    }
-  }
-/* Estilo Seccion Sobre nosotros*/
+}
+.bloc {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.bloc_bis {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: 0.75s ease-in-out;
+  flex: 1;
+}
 
-.sobre-nosotros {
-  height: 500px;
+.__uno {
+  background-image: url("../media/image/1Gran_marcha.jpg");
+}
+
+.__dos {
+  background-image: url("../media/image/2Marcha_antinuclear.jpg");
+}
+
+.__tres {
+  background-image: url("../media/image/3Movimiento_Antinuclear.jpg");
+}
+.__cuatro {
+  background-image: url("../media/image/4Marcha_Plurinacional.jpg");
+}
+
+.__cinco {
+  background-image: url("../media/image/5Marcha_Plurinacional.jpg");
+}
+
+.__seis {
+  background-image: url("../media/image/6Marcha_Plurinacional.jpg");
+}
+
+.bloc_bis:hover {
+  flex: 10;
+}
+
+.titulo {
+  /*display: flex;*/
+  /*text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  width: 90%;*/
+  
+}
+/*Estilo main*/  
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+  padding-top: 100px;
+}
+	
+.contenedor > div,
+.contenedor .principal,
+.contenedor .pie-de-pagina {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+
+
+.contenedor .principal{
+  grid-template-rows: repeat(3, auto);
+  grid-column: span 3;
+  grid-gap: 10px;
+}
+
+.contenedor .principal .actualidad{
+  background: #fff;
+	color: #12203E;
+  text-align: center;
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+  height: 100vh;
+  
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #f6d8d8;
   padding: 10px;
+  }
+  
+.grid-item {
+    background-color: #fff;
+    /*text-align: center;
+    padding: 20px;
+    font-size: 30px;*/
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  .item6 {
+    grid-column: 1 /span 3;
+    
+  }
+  
+  
+
+
+	
+}
+.contenedor .principal .vigilancia{
+  background: #bf92f3;
+	color: #12203E;
+  text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  height: 100vh;
+  
+  
+	
+}
+.contenedor .principal .sobre-nosotros{
+  background: #12203E;
+	color: #fff;
+  text-align: center;
+	/*display: flex;*/
+	align-items: justify;
+	justify-content: center;
+ /* height: 100vh;*/
+  padding: 30px;
+  
+  
+	
 }
 
-.sobre-nosotros .contenedor {
-  max-width: 600px;
-  text-align: center; 
+
+.contenedor .pie-de-pagina {
+	background: #f8caca;
+	color: #12203E;
+  text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+  grid-column: span 3;
 }
-/*Estilo Seccion Contacto*/
-.contacto-formulario {
-  padding: 50px 16px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,6 +6,8 @@
 <title>Contacto</title>
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
 <script src="../assets/js/script.js"></script>
 
 </head>
@@ -23,25 +25,33 @@
     </div>
   </nav>
 <section class="contacto">
-  <div class="contacto-formulario d-flex flex-column justify-content-center align-items-center">
+  <div class="contacto-titulo">
     <h1>Comunicate con Nosotros</h1>
+  </div>
+  <div class="contacto-formulario d-flex flex-column justify-content-center align-items-center">
+    
     <form action="paoladeembalse@gmail.com" method="POST">
       <h2>Completa tus Datos</h2><br><br>
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <input class= "input" type="text" id="nombre" name="nombre" required>
       <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido" required><br><br>
+      <input class= "input" type="text" id="apellido" name="apellido" required><br><br>
 
       <label for="tel">Teléfono:</label>
-      <input type="tel" id="tel" name="tel">
+      <input class="input" type="tel" id="tel" name="tel">
 
       <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <input class="input" type="email" id="email" name="email" required><br><br>
 
       <label for="comentario">Comentario:</label><br>
-      <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
-
-      <input type="submit" value="Enviar">
+      <textarea class="input" id="comentario" name="comentario" rows="6" cols="70"></textarea><br><br>
+      
+      <input type="checkbox" id="informacion" name="informacion">
+      <label for="informacion">Me gustaría recibir información</label>
+      <br><br>
+      <div class="text-right">
+        <input class="input" type="submit" value="Enviar">
+      </div>
     </form>
   </div>
   <div class="contacto-redes d-flex flex-column justify-content-center align-items-center">

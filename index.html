@@ -8,69 +8,95 @@
   <script src="../assets/js/script.js"></script>
   <!--Estilo de letra de Google-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Rubik+Mono+One&family=Shantell+Sans:ital,wght@0,300;1,300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">          
 </head>
 <body>
-  <!--ver si va seccion-->
-  <!--Barra de Navegacion-->
+<!--Barra de Navegacion-->
   <nav class="navbar" id="myNavbar">
     <div class="container-fluid">
-      <a href="#home">Logo</a>      
+      <a href="#home">
+        <img src="./assets/media/image/movimiento-antinuclear-de-la-republica-argentina-logo.jpg" alt="Logo" width="30" height="30">
+      </a>
       <a href="#actualidad">Actualidad</a>
       <a href="#vigilancia">Vigilancia</a>
-      <a href="#accidentes">Accidentes</a>
       <a href="#sobre-nosotros">Sobre Nosotros</a>
       <a href="pages\contacto.html">Contacto</a>
     
       <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </div>
   </nav>
-
-  
-
-  <!--Seccion Principal -->
-  <section class="principal">
-    <div class="principal-principal d-flex flex-column justify-content-center align-items-center">
-      <img class= "principal-imagen" src="assets\media\image\Marcha Plurinacional Antinuclear 2022 - Zárate - 1.jpg"  alt="Marcha Plurinacional Antinuclear">
-      <h1>Somos el M.A.R.A.</h1>
-      <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tempora id, odit voluptatum delectus asperiores maxime! Perferendis eaque, earum voluptates excepturi reiciendis quo quis a nulla in recusandae blanditiis harum eos quibusdam veniam molestias laudantium placeat hic mollitia. Ad maxime consequuntur molestias temporibus atque eligendi magnam laborum eius consequatur nulla?</h2>
-    </div>
-    <!--<div class="principal-inferior">
-      <img class="principal-inferior-imagen img-fluid" src="..\assets\media\image\banner-ciber.jpg" height="100px"  alt="banner"> 
-    </div>-->
-  </section>
-  <!--Seccion Actualidad-->
-  <section id="actualidad" class="actualidad align-items-stretch">
-    <div >
-      <h1>Actualidad</h1>
-
-    </div>
-  </section>
-  <!--Seccion Vigilancia-->
-  <section id="vigilancia" class="vigilancia align-items-stretch">
-    <div>
-      <h1>Vigilancia de Instalaciones Nucleares</h1>
-    </div>
-
-  </section>
-  <!--Seccion Accidentes-->
-  <section id= "accidentes" class="accidentes align-items-stretch">
-    <div >
-      <h1>Accidentes Nucleares</h1>
-
-    </div>
-  </section>
-  
-  <!-- Sobre nosotros -->   
-  <section id="sobre-nosotros" class="sobre-nosotros seccion-oscura">
-      <div class="contenedor">
-        <h2 class="seccion-titulo texto-blanco">Sobre nosotros</h2>
-        <p class="seccion-textp">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias exercitationem vero quasi aliquid ut velit in, rem ex voluptatum. Quasi sequi magnam dolores atque quos ratione odio, quibusdam, facere eos a sit explicabo adipisci fuga itaque sunt nostrum in voluptatibus est illum mollitia eaque harum ipsum. Reprehenderit itaque nam earum?
-        </p>
-      </div> 
-    </section>
+<!--Seccion Encabezado -->
+  <header class= "encabezado">
     
+    <div class="bloc">
 
+      <div class="bloc_bis __uno"></div>
+      <div class="bloc_bis __dos"></div>
+      <div class="bloc_bis __tres"></div>
+      <div class="bloc_bis __cuatro"></div>
+      <div class="bloc_bis __cinco"></div>
+      <div class="bloc_bis __seis"></div>
+      
+      
+    </div> 
+  <div class="titulo">
+    <h1>Somos el M.A.R.A.</h1>
+    <h2>Movimiento Antinuclear de la Republica Argentina</h2>
+  </div>
+
+  </header>
+<!--Seccion Main-->
+  <div class= "contenedor"> 
+    
+    <main class="principal">  
+      <!--Seccion Actualidad-->
+      <div class="actualidad" id="actualidad">
+        <h2>Actualidad</h2>
+        <div class="grid-container">
+          <div class="grid-item item1">1</div>
+          <div class="grid-item item2">2</div>
+          <div class="grid-item item3">3</div>  
+          <div class="grid-item item4">4</div>
+          <div class="grid-item item5">5</div>
+          <div class="grid-item item6">6</div>
+        </div>
+
+      </div>
+      
+      <!--Seccion Vigilancia-->
+      <div  class="vigilancia"  id="vigilancia">
+        <h2>Vigilancia de Instalaciones Nucleares</h2>
+        <div class="grid-container">
+          <!--<div>1</div>
+          <div>2</div>
+          <div>3</div>  
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>-->
+        </div>
+      </div>
+      <!-- Seccion Sobre Nosotros -->   
+      <div class="sobre-nosotros" id="sobre-nosotros">
+        <h2>Quienes Somos</h2>
+        <div>
+          <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias exercitationem vero quasi aliquid ut velit in, rem ex voluptatum. Quasi sequi magnam dolores atque quos ratione odio, quibusdam, facere eos a sit explicabo adipisci fuga itaque sunt nostrum in voluptatibus est illum mollitia eaque harum ipsum. Reprehenderit itaque nam earum?
+          </p>
+        </div>
+      </div> 
+    
+    </main>
+    <footer class="pie-de-pagina">
+      
+      <div class="contacto">
+        <h1>CONTACTO</h1>
+
+      </div>
+    </footer>
+  
+  </div>
 </body>
 </html>
+
+
