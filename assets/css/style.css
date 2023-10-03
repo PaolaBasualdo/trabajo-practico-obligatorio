@@ -54,7 +54,7 @@
 }
 body {
 	background: #E9ECF4;
-	color: #000;
+	color:#12203E;
 	font-family: 'Nunito Sans', sans-serif;
 }
 h1 {
@@ -89,7 +89,7 @@ h3 {
   width: 100%;
 }
 .bloc_bis {
-  height: 100vh;
+  height: 300px;
   background-size: cover;
   background-position: center;
   transition: 0.75s ease-in-out;
@@ -128,96 +128,110 @@ h3 {
 
 
 @media screen and (max-width: 600px) {
+  
   .bloc_bis {
     display: none;
   }
   .imagen{
     display: flex;
-    height: 100vh;
+    height: 250px;
+    width: 300px;
     background-size: cover;
     background-position: center;
+    justify-content: center;
+    margin: 20px;
   }
-  /*falta hacer que aparezca solo la imagen 5 para pantallas menores a 600px*/
-
-
-  /*titulo {
-  /*display: flex;*/
-  /*text-align: center;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-  width: 90%;*/
+  .h1{
+    font-size: 2rem;
+  }
+  .h2{
+    font-size: 1rem;
+  }
   
 }
 /*Estilo main*/  
-.contenedor {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, auto);
-  padding-top: 150px;
-  
-}
+
 	
-.contenedor > div,
-.contenedor .principal,
-.contenedor .pie-de-pagina {
-	background: #fff;
+.principal {
+	background:#E9ECF4;
+	color: #12203E;
 	padding: 20px, auto;
 	border-radius: 4px;
 }
 
-
-
-.contenedor .principal{
-  grid-template-rows: repeat(3, auto);
-  grid-column: span 3;
-  grid-gap: 10px;
-}
-
-.contenedor .principal .actualidad{
-  background: #fff;
+.principal .actualidad{
+  background: #E9ECF4;
 	color: #12203E;
   text-align: center;
-	/*display: flex;*/
 	align-items: center;
 	justify-content: center;
-  height: 100vh;
+  /*height: 100vh;*/
+  padding-top: 90px;
+}
   
-.grid-container {
+.grid-container-actualidad {
   display: grid;
-  gap: 10px;
-  background-color: #f6d8d8;
-  padding: 10px;
+  gap: 20px;
+  background-color: #E9ECF4;
+  padding: 20px;
+  
   }
   
-.grid-item {
-    background-color: #fff;
-    /*text-align: center;
-    padding: 20px;
-    font-size: 30px;*/
-  }
+/*.grid-item a img {
+  max-width: 50%; 
+  height: auto; 
+  width: 100%; 
+  max-height: 200px; */
   
-  .item1 {
-    grid-column: 1 / span 2;
-    grid-row: 1;
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 /span 4;
   }
-  
-  .item2 {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-  }
-  
-  .item5 {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-  }
-  .item6 {
-    grid-column: 1 /span 3;
     
+.item2 {
+  grid-column: 3;
+  grid-row: 1;
+  }
+
+.item3 {
+  grid-column: 3;
+  grid-row: 2;
+  }
+
+.item4 {
+  grid-column: 3;
+  grid-row: 3;
+  }
+
+.item5 {
+  grid-column: 3;
+  grid-row: 4;
+  }
+@media screen and (max-width: 600px) {
+  .item1 {
+    grid-column: 1 ;
+    grid-row: 1;
+    }
+    
+  .item2 {
+    grid-column: 1;
+    grid-row: 2;
+    }
+
+  .item3 {
+    grid-column: 1;
+    grid-row: 3;
+    }
+
+  .item4 {
+    grid-column: 1;
+    grid-row: 4;
+    }
+
+  .item5 {
+    grid-column: 1;
+    grid-row: 5;
+    } 
   }
   
   
@@ -225,7 +239,7 @@ h3 {
 
 	
 }
-.contenedor .principal .vigilancia{
+.principal .vigilancia{
   background: #bf92f3;
 	color: #12203E;
   text-align: center;
@@ -237,22 +251,54 @@ h3 {
   
 	
 }
-.contenedor .principal .sobre-nosotros{
-  background: #12203E;
-	color: #fff;
-  text-align: center;
-	/*display: flex;*/
-	align-items: justify;
-	justify-content: center;
- /* height: 100vh;*/
-  padding: 30px;
+/*Seccion Sobre Nosotros*/
+.sobre-nosotros {
+  background-color: #12203E;
+  color: white;
+  padding: 20px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: justify;
+  margin: 20px auto;
+  padding-top: 90px;
+  border-radius: 4px;
+}
+
+.sobre-nosotros h2 {
+   margin-bottom: 30px; 
+}
+
+.sobre-nosotros p {
+  font-family: 'Nunito Sans', sans-serif; 
+  font-size: 16px; 
+  line-height: 1.5; 
+  margin-bottom: 20px; 
+}
+
+.video {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  margin-top: 20px;
   
-  
-	
+}
+ .video1 {
+  border: 2px solid #ffffff; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.video2 {
+  border: 2px solid #ffffff; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.video .video1,
+.video .video2 {
+  margin:20px; 
 }
 
 
-.contenedor .pie-de-pagina {
+.pie-de-pagina {
 	background: #f8caca;
 	color: #12203E;
   text-align: center;
