@@ -6,12 +6,14 @@
     font-family: 'Nunito Sans', sans-serif;
     position: fixed;
     z-index: 100;
+    top: 0; /*agregado damian*/
   }
   
   .navbar a {
     float: left;
     display: block;
-    color: black;
+    color: #12203E;
+    font-weight: 800;
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
@@ -476,16 +478,47 @@ h5{
   margin:20px; 
 }
 
+/*pie de pagina codigo agregado damian*/
 
-.pie-de-pagina {
-	background: #f8caca;
-	color: #12203E;
-  text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center; 
-  grid-column: span 3;
-}
+
+.comunicacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #redes-sociales {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+    list-style: none;
+  }
+  
+  #redes-sociales a, 
+  #formulario a {
+    text-decoration: none;
+    color: #12203E;
+    font-size: 1rem;
+    font-weight: 770;
+  }
+   
+ #redes-sociales h2, 
+  #formulario h2{
+   font-weight: 800;
+  }
+  
+  #formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #redes-sociales a:hover, 
+  #formulario a:hover{
+    transition: all ease 600ms;
+    transform: scale(1.3);
+  }
 
 
 
