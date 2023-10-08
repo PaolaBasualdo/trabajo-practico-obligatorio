@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somos el M.A.R.A</title>
+  <link rel="stylesheet" href="../assets/css/style-item.css">
+  <script src="../assets/js/script.js"></script>
+  <!--Estilo de letra de Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">          
+</head>
+<body>
+<!--Barra de Navegacion-->
+  <nav class="navbar" id="myNavbar">
+    <div class="container-fluid">
+      <a href="../index.html">
+        <img src="../assets/media/image/logo.jpg" alt="Logo" width="30" height="30">
+      </a>
+      <a href="../index.html#actualidad">Actualidad</a>
+      <a href="../index.html#vigilancia">Vigilancia</a>
+      <a href="../index.html#sobre-nosotros">Sobre Nosotros</a>
+      <a href="../index.html#contacto">Contacto</a>
+    
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+  </nav>
+  <main> 
+    <div class="principal">
+      <h2 class="titulo">CENTRAL NUCLEAR ATUCHA II</h2>
+      <img class="imagen"   src="../assets/media/image/9-central-nuclear-atucha-ii.jpg" alt="Central Nuclear Atucha II">
+        <p >
+        La Central Nuclear Atucha II está ubicada sobre la margen derecha del río Paraná, en la localidad de Lima, partido de Zárate, a unos 100 kilómetros de la Ciudad de Buenos Aires. Las obras comenzaron en 1981 y las operaciones comerciales 35 años después. Desde entonces la central presenta recurrentes fallas en los internos del reactor, que la obligan a largas paradas de mantenimiento.</p>
+    </div>
+    <div id="map"></div>
+  </main> 
+
+  <footer class="pie-de-pagina">
+    <a href="../index.html" class="boton">Volver a la página principal</a>
+    
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script>
+</body>
+</html>

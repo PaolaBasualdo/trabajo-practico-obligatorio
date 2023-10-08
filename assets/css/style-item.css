@@ -49,9 +49,7 @@
     text-align: left;
   }
   /* Estilos generales*/
-*{ margin: 0;
-   padding: 0;
-}
+
 body {
 	background: #E9ECF4;
 	color:#12203E;
@@ -70,16 +68,66 @@ h3 {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-#btnSubir {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+.principal {
+  background: #E9ECF4;
+	color: #12203E;
+  text-align: justify;
+	align-items: center;
+	justify-content: center;
+  margin: 20px auto;
+  padding: 100px 50px 20px 50px;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif; 
+  font-size: 16px; 
+  line-height: 1.5; 
+  margin-bottom: 20px; 
+}
+.titulo{
+  text-align: center;
+}
+
+.imagen {
+  width: 100%; 
+  max-height: 500px; 
+  object-fit: cover;
+  padding: 30px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+   
+ }
+
+.copete{
+  font-weight: bold;
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.autor {
+  text-align: right; 
+  font-weight: bold;
+  }
+
+.pie {
+  text-align: center; 
+  margin-top: 20px; 
+  font-size: 12px; 
+  }
+.pie-de-pagina {
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFFF00; 
+  color: #12203E; 
+  text-decoration: none; 
+  border: 2px solid #12203E; 
+  border-radius: 5px; 
+  cursor: pointer; 
   }
   

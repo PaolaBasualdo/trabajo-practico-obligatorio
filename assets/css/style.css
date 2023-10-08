@@ -1,10 +1,11 @@
 /* Barra de navegacion */
 .navbar {
-    background-color: white;
+    background-color: #d2d4d8;
     width: 100%;
     overflow: hidden;
     font-family: 'Nunito Sans', sans-serif;
     position: fixed;
+    z-index: 100;
   }
   
   .navbar a {
@@ -48,10 +49,13 @@
     display: block;
     text-align: left;
   }
+
   /* Estilos generales*/
+
+
 *{ margin: 0;
    padding: 0;
-}
+  }
 body {
 	background: #E9ECF4;
 	color:#12203E;
@@ -62,14 +66,26 @@ h1 {
   font-family: 'Nunito Sans', sans-serif;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: 'Nunito Sans', sans-serif;
 }
 h3 {
   font-size: 1rem;
   font-family: 'Nunito Sans', sans-serif;
 }
+
+h4 {
+  font-size: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+} 
+h5{
+  font-size: 0.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+}
 /*Encabezado*/
+
 .encabezado {
 	background:#E9ECF4;
 	color: #12203E;
@@ -125,7 +141,7 @@ h3 {
 .bloc_bis:hover {
   flex: 10;
 }
-
+/*Hace responsivo al encabezado*/
 
 @media screen and (max-width: 600px) {
   
@@ -165,7 +181,6 @@ h3 {
   text-align: center;
 	align-items: center;
 	justify-content: center;
-  /*height: 100vh;*/
   padding-top: 90px;
 }
   
@@ -174,83 +189,247 @@ h3 {
   gap: 20px;
   background-color: #E9ECF4;
   padding: 20px;
-  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto); 
+  position: relative; 
+  position: relative; 
+  z-index: 1;
   }
   
-/*.grid-item a img {
-  max-width: 50%; 
-  height: auto; 
-  width: 100%; 
-  max-height: 200px; */
-  
+
 .item1 {
   grid-column: 1 / span 2;
-  grid-row: 1 /span 4;
+  grid-row: 1 / span 2
   }
+
+.imagen1 {
+  width: 80%; 
+  max-height: 300px; 
+  object-fit: cover;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+
+  }
+  
+
     
 .item2 {
   grid-column: 3;
   grid-row: 1;
   }
 
+.imagen2 {
+  width: 100%; 
+  max-height: 300px; 
+  object-fit: cover;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+  
+  }
+
+
+
 .item3 {
   grid-column: 3;
   grid-row: 2;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px;
+  padding: 20px;
+  object-fit: cover;
+  
   }
 
 .item4 {
   grid-column: 3;
   grid-row: 3;
   }
-
 .item5 {
-  grid-column: 3;
-  grid-row: 4;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+
+.item6 {
+  width: 80%;
+  grid-column: 2;
+  grid-row: 3;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px;
+  padding:20px;   
+  object-fit: cover;
   }
+ 
+
+
+ 
 @media screen and (max-width: 600px) {
-  .item1 {
-    grid-column: 1 ;
+  .grid-container-actualidad {
+    gap: 30px;
+    padding: 20px; 
+    }
+  .imagen1 {
+    width: 100%; 
+  }
+
+   .item1 {
+    grid-column: 1/ span2 ;
     grid-row: 1;
     }
     
   .item2 {
-    grid-column: 1;
+    grid-column:1/ span2;
     grid-row: 2;
     }
 
   .item3 {
-    grid-column: 1;
+    grid-column: 1/ span2;
     grid-row: 3;
+    border: 2px solid #fff;  
     }
 
   .item4 {
-    grid-column: 1;
+    grid-column: 1/ span2;
     grid-row: 4;
     }
-
-  .item5 {
-    grid-column: 1;
+  
+  .item5{
+    grid-column: 1 / span2;
     grid-row: 5;
-    } 
+  }
+  .item6{
+    width: 100%;
+    grid-column: 1 / span2;
+    grid-row: 6;
+    border: 2px solid #fff;
+  } 
   }
   
-  
+/*Seccion Vigilancia*/
 
-
-	
-}
 .principal .vigilancia{
-  background: #bf92f3;
+  background: #E9ECF4;
 	color: #12203E;
   text-align: center;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-  height: 100vh;
+  padding-top: 90px;
   
+ }
+ 
+.grid-container-vigilancia {
+  display: grid;
+  gap: 30px;
+  background-color: #E9ECF4;
+  padding: 20px;
+    
+  }
   
-	
-}
+
+.item7 {
+  grid-column: 1;
+  grid-row: 1; 
+  }
+.item8 {
+  grid-column: 2;
+  grid-row: 1; 
+  }
+
+.item9 {
+  grid-column: 1;
+  grid-row: 2; 
+  }
+.item10 {
+  grid-column: 2;
+  grid-row: 2; 
+  }
+.item11 {
+  grid-column: 1;
+  grid-row: 3; 
+  }
+.item12 {
+  grid-column: 2;
+  grid-row: 3; 
+  }
+.imagen3 { /*imagen seccion vigilancia*/
+  width: 100%; 
+  max-height: 150px; 
+  object-fit: cover;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+  
+  }
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+    }
+    
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  }
+.grid-item {
+  position: relative;
+  }
+.grid-container-vigilancia .grid-item:hover img {
+  opacity: 0.2;
+  }
+.grid-item:hover .overlay {
+  opacity: 1;
+  }
+.grid-item img {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFF00; 
+    color: #12203E; 
+    text-decoration: none; 
+    border: 2px solid #12203E; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    }
+    
+  @media screen and (max-width: 600px) {
+    .item7 {
+      grid-column: 1;
+      grid-row: 1; 
+      }
+    .item8 {
+      grid-column: 1;
+      grid-row: 2; 
+      }
+    
+    .item9 {
+      grid-column: 1;
+      grid-row: 3; 
+      }
+    .item10 {
+      grid-column: 1;
+      grid-row: 4; 
+      }
+    .item11 {
+      grid-column: 1;
+      grid-row: 5; 
+      }
+    .item12 {
+      grid-column: 1;
+      grid-row: 6; 
+      }
+  }  
+
 /*Seccion Sobre Nosotros*/
 .sobre-nosotros {
   background-color: #12203E;
