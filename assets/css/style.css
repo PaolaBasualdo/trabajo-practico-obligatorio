@@ -51,7 +51,7 @@
     display: block;
     text-align: left;
   }
-
+  s
   /* Estilos generales*/
 
 
@@ -70,6 +70,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
 }
 h3 {
   font-size: 1rem;
@@ -444,6 +445,7 @@ h5{
   margin: 20px auto;
   padding-top: 90px;
   border-radius: 4px;
+  justify-content: center;
 }
 
 .sobre-nosotros h2 {
@@ -477,23 +479,39 @@ h5{
 .video .video2 {
   margin:20px; 
 }
+@media screen and (max-width: 600px){
+/*.sobre-nosotros {
+  padding-left: 20px;
+}*/
+.video {
+  justify-content: center;
 
+}}
 /*pie de pagina codigo agregado damian*/
-
-
-.comunicacion {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.contacto {
+  display: grid;
+  width: 100%;
   }
+.grid-redes-sociales {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid-formulario {
+  grid-column: 2;
+  grid-row: 1;
+}
   #redes-sociales {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    text-align: left;
-    list-style: none;
+  height: 400px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  list-style: none;
+  padding-left: 40px;
+
   }
   
   #redes-sociales a, 
@@ -501,35 +519,51 @@ h5{
     text-decoration: none;
     color: #12203E;
     font-size: 1rem;
-    font-weight: 770;
+    font-weight: 800;
   }
    
  #redes-sociales h2, 
   #formulario h2{
-   font-weight: 800;
+  font-size: 1.5rem;    
+  font-weight: 800;
   }
   
   #formulario {
+    padding-top: 10px;
     display: flex;
+    width: 80%;
     justify-content: center;
     flex-direction: column;
+    font-size: 12px;
+  }
+  .text-right{
+    text-align: right;
+    
   }
   #redes-sociales a:hover, 
   #formulario a:hover{
     transition: all ease 600ms;
     transform: scale(1.3);
   }
+ 
+@media screen and (max-width: 750px) {
+ .grid-redes-sociales{
+    grid-column: 1;
+    grid-row:1;
+  }
+  
+  .grid-formulario{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #redes-sociales h2 {
+    text-align: left;
+  }
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #formulario{
+  font-size: 10px;
+  padding:20px;
+  width: 50%;
+}
+}
