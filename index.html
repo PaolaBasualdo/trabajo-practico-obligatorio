@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">   
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,200&display=swap" rel="stylesheet">      
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,200&display=swap" rel="stylesheet"> 
+   
   <script src="https://kit.fontawesome.com/09eef09e68.js" crossorigin="anonymous"
     ></script>
  
@@ -46,7 +47,7 @@
       <div class="bloc_bis __cinco"></div>
       <div class="bloc_bis __seis"></div>
       
-      <div class="imagen"><img src="./assets/media/image/5Marcha_Plurinacional.jpg" alt="Marcha Plurinacional">
+      <div class="imagen-encabezado"><img src="./assets/media/image/5Marcha_Plurinacional.jpg" alt="Marcha Plurinacional">
       </div>
       
       
@@ -126,7 +127,7 @@
         <div class="grid-item item10">
           <a href="./pages/item10.html"> <img class="imagen3"   src="./assets/media/image/10-blue-sky-uranium-perforacion-cerca-de-valcheta.jpeg" alt="Mina de Uranio Valcheta"></a>
           <div class="overlay">
-            <p>Perforaciones Uranio - Valcheta</p>
+            <p>Amarillo Grande</p>
           </div>
         </div> 
           
@@ -189,34 +190,34 @@
 
     <div class="grid-formulario" id="formulario"> 
       
-      <form action="paoladeembalse@gmail.com" method="POST" onsubmit="return validarFormulario();">
-        <h2>Completa tus Datos</h2><br><br>
+      <form action="https://formsubmit.co/paoladeembalse@gmail.com" method="POST" onsubmit="return validarFormulario();">
+        <!--0d3faa8b45fbc7d0d678b35e5256d823-->
+        <h2>Completa tus Datos</h2><hr>
         <label for="nombre">Nombre:</label>
-        <input class= "input" type="text" id="nombre" name="nombre" required>
+        <input class= "input" type="text" id="nombre" name="nombre" required> 
         <label for="apellido">Apellido:</label>
         <input class= "input" type="text" id="apellido" name="apellido" required><br><br>
   
         <label for="tel">Teléfono:</label>
         <input class="input" type="tel" id="tel" name="tel">
   
-        <label for="email">Correo Electrónico:</label>
+        <label for="email">E-mail:</label>
         <input class="input" type="email" id="email" name="email" required><br><br>
   
         <label for="comentario">Comentario:</label><br>
-        <textarea class="input" id="comentario" name="comentario" rows="6" cols="70"></textarea><br><br>
+        <textarea class="input" id="comentario" name="comentario" rows="7" cols="40"></textarea><br><br>
         
         <input type="checkbox" id="informacion" name="informacion">
         <label for="informacion">Me gustaría recibir información</label>
         
         <div class="text-right">
-        <input class="input" type="submit" id="enviar" value="Enviar">
+        <button type="submit" class="input" id="enviar">Enviar</button>
         </div>
         </form>
     </div>
     
   </footer>
   
-
 </body>
 
 </html>
