@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--Barra de Navegacion-->
-  <nav class="navbar" id="myNavbar">
+  <nav class="navbar" id="navbar">
     <div class="container-fluid">
       <a href="../index.html">
         <img src="../assets/media/image/logo.jpg" alt="Logo" width="30" height="30">
@@ -28,7 +28,7 @@
   </nav>
   <main> 
     <div class="principal">
-      <h2 class="titulo">MAS INSTALACIONES NUCLEARES</h2><hr>
+      <h2 class="titulo">Mas Instalaciones Nucleares</h2><hr>
      <ul>
       <li>Planta de dióxido de uranio Dioxitek SA, Sitio Córdoba</li>
       <li>Nueva Planta de Uranio, Dioxitek SA, Formosa</li>
@@ -45,10 +45,11 @@
       <li>Planta de uranio de Pilcaniyeu, Rio Negro </li>
       <li>Planta Industrial de Agua Pesada, Neuquen</li>
 
-     </ul>
-
-         
-      <p ></p>
+     </ul><br><br>
+     <hr>
+     <h3>Su Ubicacion:</h3>
+     <div id="map"></div> 
+    
     </div>
   </main> 
 
@@ -56,6 +57,6 @@
     <a href="../index.html" class="boton">Volver a la página principal</a>
     
   </footer>
-  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvCa4Ijnhclwtdn0hVwH4FapvPlEa_h00&callback=initMap" async defer></script>
 </body>
 </html>

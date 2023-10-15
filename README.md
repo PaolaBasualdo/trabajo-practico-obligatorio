@@ -22,6 +22,7 @@ Este sitio web ha sido desarrollado utilizando tecnologías modernas para garant
 - **HTML5:** Estructura semántica que asegura la accesibilidad y legibilidad del contenido.
 - **CSS:** Estilos cuidadosamente diseñados para una presentación agradable y coherente en todos los dispositivos.
 - **JavaScript:** Interacciones dinámicas y mejoras en la experiencia del usuario.
+- **Google Maps API:** interfaz de programación de aplicaciones proporcionada por Google que permite integrar y personalizar mapas de Google en aplicaciones web y móviles.
 
 ## Cómo Contribuir
 
@@ -36,6 +37,7 @@ Este sitio web ha sido desarrollado utilizando tecnologías modernas para garant
 Si tienes preguntas, sugerencias o deseas ponerte en contacto con el equipo del M.A.R.A., puedes enviarnos un correo electrónico a somoselmara@gmail.com o llenar el formulario de contacto en nuestro sitio web.
 
 ## Autores
+Damian Flores
 Paola Ivana Basualdo
 
 ## Agradecimientos
