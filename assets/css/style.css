@@ -106,6 +106,14 @@ h5{
   transition: 0.75s ease-in-out;
   flex: 1;
 }
+@media screen and (min-width: 1024px) {
+
+  .bloc_bis{
+  
+  height: 100vh;
+}
+
+
 .imagen{
   display: none;
 }
@@ -202,7 +210,12 @@ h5{
 	justify-content: center;
   padding-top: 90px;
 }
-  
+@media screen and (min-width: 1024px) {
+ .principal.actualidad {
+  margin-top: 50px;}
+  padding-top: 50px;
+}
+
 .grid-container-actualidad {
   display: grid;
   gap: 20px;
