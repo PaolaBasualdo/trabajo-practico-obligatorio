@@ -167,21 +167,22 @@ li {
 }
 @media screen and (min-width: 1024px) {
   .imagen {
-    width: 100%; 
+    width: 70%; 
     max-width: 100%; 
     height: auto; 
+    padding-left: 200px;
   }
  
   p {
-    font-size: 20 px; 
+    font-size: 25 px; 
     line-height: 1.5; 
     margin-bottom: 20px; 
   }
   .pie {
-    font-size: 12px; 
+    font-size: 15px; 
     }
   .autor{
-    font-size:14px;
+    font-size:18px;
   }
   .principal {
     margin-left: 60px;
@@ -190,6 +191,6 @@ li {
 
   
   
-}
+
 
   

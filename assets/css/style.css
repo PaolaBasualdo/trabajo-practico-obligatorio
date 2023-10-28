@@ -57,6 +57,9 @@ body {
 	color:#12203E;
 	font-family: 'Nunito Sans', sans-serif;
 }
+
+
+
 h1 {
   font-size: 3rem;
   font-family: 'Nunito Sans', sans-serif;
@@ -106,17 +109,7 @@ h5{
   transition: 0.75s ease-in-out;
   flex: 1;
 }
-@media screen and (min-width: 1024px) {
 
-  .bloc_bis{
-  
-  height: 100vh;
-}
-
-
-.imagen{
-  display: none;
-}
 
 .__uno {
   background-image: url("../media/image/1Gran_marcha.jpg");
@@ -179,14 +172,24 @@ h5{
   transition: transform 2s linear;
   border-radius: 10px;
 }
-
-
-
- 
-
-
 }
-  
+@media screen and (min-width: 1024px) {
+.encabezado{
+  width: 70%;
+}
+.bloc_bis{
+  height: 100vh;
+}
+
+.imagen{
+  display: none;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+.imagen{
+    display: none;
+} 
+}
   
   
 
@@ -199,7 +202,12 @@ h5{
 	background:#E9ECF4;
 	color: #12203E;
 	padding: 20px, auto;
-	border-radius: 4px;
+	}
+@media screen and (min-width: 1024px) {
+.principal {
+  width: 70%;
+  padding-left: 200px;
+}
 }
 
 .principal .actualidad{
@@ -210,10 +218,11 @@ h5{
 	justify-content: center;
   padding-top: 90px;
 }
+
 @media screen and (min-width: 1024px) {
  .principal.actualidad {
-  margin-top: 50px;}
   padding-top: 50px;
+}
 }
 
 .grid-container-actualidad {
@@ -511,6 +520,17 @@ h5{
   justify-content: center;
 
 }}
+@media screen and (min-width: 1024px) {
+  .sobre-nosotros {
+    width: 70%;
+  }
+  .sobre-nosotros p{
+    padding: 30px 300px 30px 300px;
+    font-size: 25px;
+  }
+}
+
+
 
 /*pie de pagina codigo agregado damian*/
 
@@ -520,6 +540,13 @@ h5{
 .contacto {
   display: grid;
   width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .contacto {
+    width: 70%;
+    padding-left: 200px;
+    
+  }
 }
 .grid-redes-sociales {
   grid-column: 1;
