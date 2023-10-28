@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somos el M.A.R.A</title>
+  <link rel="stylesheet" href="../assets/css/style-item.css">
+  <script src="../assets/js/script.js"></script>
+  <!--Estilo de letra de Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">          
+</head>
+<body>
+<!--Barra de Navegacion-->
+  <nav class="navbar" id="navbar">
+    <div class="container-fluid">
+      <a href="../index.html">
+        <img src="../assets/media/image/logo.jpg" alt="Logo" width="30" height="30">
+      </a>
+      <a href="../index.html#actualidad">Actualidad</a>
+      <a href="../index.html#vigilancia">Vigilancia</a>
+      <a href="../index.html#sobre-nosotros">Sobre Nosotros</a>
+      <a href="../index.html#contacto">Contacto</a>
+    
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+  </nav>
+  <main> 
+    <div class="principal">
+      <h2 class="titulo">Mas Instalaciones Nucleares</h2><hr>
+     <ul>
+      <li>Planta de dióxido de uranio Dioxitek SA, Sitio Córdoba</li>
+      <li>Nueva Planta de Uranio, Dioxitek SA, Formosa</li>
+      <li>Ex mina de uranio Sierra Pintada, Mendoza</li>
+      <li>Reactor CAREM, Buenos Aires</li>
+      <li>Reactor Multipropósito RA-10, Buenos Aires</li>
+      <li>Centro Atómico Constituyentes, Buenos Aires</li>
+      <li>Centro Atómico Ezeiza, Buenos Aires</li>
+      <li>Ex mina de uranio Huemul, Mendoza</li>
+      <li>Ex mina de uranio La Estela, San Luis</li>
+      <li>Ex mina de uranio Los Colorados, La Rioja</li>
+      <li>Ex mina de uranio Tonco-Don Otto, Salta</li>
+      <li>Ex Complejo Minero Fabril Malargüe, Mendoza</li>
+      <li>Planta de uranio de Pilcaniyeu, Rio Negro </li>
+      <li>Planta Industrial de Agua Pesada, Neuquen</li>
+
+     </ul><br><br>
+     <hr>
+     <h3>Su Ubicacion:</h3>
+     <div id="map"></div> 
+    
+    </div>
+  </main> 
+
+  <footer class="pie-de-pagina">
+    <a href="../index.html" class="boton">Volver a la página principal</a>
+    
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvCa4Ijnhclwtdn0hVwH4FapvPlEa_h00&callback=initMap" async defer></script>
+</body>
+</html>

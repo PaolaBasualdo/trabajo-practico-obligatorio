@@ -1,0 +1,642 @@
+/* Barra de navegacion */
+.navbar {
+    background-color: #d2d4d8;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+    position: fixed;
+    z-index: 100;
+    top: 0; /*agregado damian*/
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #12203E;
+    font-weight: 800;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color:white;
+    color: black;
+} 
+.navbar .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+      display: none;
+     
+    }
+      
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+.navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+} 
+.navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+/* Estilos generales*/
+
+*{ margin: 0;
+   padding: 0;
+  }
+body {
+	background: #E9ECF4;
+	color:#12203E;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+h2 {
+  font-size: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+}
+h3 {
+  font-size: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+h4 {
+  font-size: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+} 
+h5{
+  font-size: 0.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+}
+
+/*Encabezado*/
+
+.encabezado {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  width: 90%;
+  margin: 20px auto;
+  padding-top: 60px;
+  
+}
+.bloc {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.bloc_bis {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.75s ease-in-out;
+  flex: 1;
+}
+
+
+.__uno {
+  background-image: url("../media/image/1Gran_marcha.jpg");
+}
+
+.__dos {
+  background-image: url("../media/image/2Marcha_antinuclear.jpg");
+}
+
+.__tres {
+  background-image: url("../media/image/3Movimiento_Antinuclear.jpg");
+}
+.__cuatro {
+  background-image: url("../media/image/4Marcha_Plurinacional.jpg");
+}
+
+.__cinco {
+  background-image: url("../media/image/5Marcha_Plurinacional.jpg");
+}
+
+.__seis {
+  background-image: url("../media/image/6Marcha_Plurinacional.jpg");
+}
+
+.bloc_bis:hover {
+  flex: 10;
+}
+/*Hace responsivo al encabezado*/
+
+@media screen and (max-width: 600px) {
+
+.encabezado{ 
+  height: 200px;
+}
+.h1 {
+  font-size: 2rem;
+} 
+.h2 {
+  font-size: 1rem;
+  }
+
+.bloc_bis {
+  display: none;
+  }
+.imagen { 
+  display: flex; 
+  height: 100vhx;
+  width:100%;
+  
+ }
+.contenedor {
+  overflow:hidden;
+  border-radius: 10px;
+  
+  
+} 
+.contenedor:hover .imagen {
+  transform-origin: center;
+  transform: scale(1.6);
+  transition: transform 2s linear;
+  border-radius: 10px;
+}
+}
+@media screen and (min-width: 1024px) {
+.encabezado{
+  width: 70%;
+}
+.bloc_bis{
+  height: 100vh;
+}
+
+.imagen{
+  display: none;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+.imagen{
+    display: none;
+} 
+}
+  
+  
+
+
+
+/*Estilo main*/  
+
+	
+.principal {
+	background:#E9ECF4;
+	color: #12203E;
+	padding: 20px, auto;
+	}
+@media screen and (min-width: 1024px) {
+.principal {
+  width: 70%;
+  padding-left: 200px;
+}
+}
+
+.principal .actualidad{
+  background: #E9ECF4;
+	color: #12203E;
+  text-align: center;
+	align-items: center;
+	justify-content: center;
+  padding-top: 90px;
+}
+
+@media screen and (min-width: 1024px) {
+ .principal.actualidad {
+  padding-top: 50px;
+}
+}
+
+.grid-container-actualidad {
+  display: grid;
+  gap: 20px;
+  background-color: #E9ECF4;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto); 
+  position: relative; 
+  z-index: 1;
+  }
+  
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2
+  }
+
+.imagen1 {
+  width: 80%; 
+  max-height: 300px; 
+  object-fit: cover;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+
+  }
+  
+
+    
+.item2 {
+  grid-column: 3;
+  grid-row: 1;
+  }
+
+.imagen2 {
+  width: 100%; 
+  max-height: 300px; 
+  object-fit: cover;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+  
+  }
+
+
+
+.item3 {
+  grid-column: 3;
+  grid-row: 2;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px;
+  padding: 20px;
+  object-fit: cover;
+  
+  }
+
+.item4 {
+  grid-column: 3;
+  grid-row: 3;
+  }
+.item5 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+
+.item6 {
+  width: 70%;
+  grid-column: 2;
+  grid-row: 3;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px;
+  padding:20px;   
+  object-fit: cover;
+  }
+ 
+
+
+ 
+@media screen and (max-width: 600px) {
+  .grid-container-actualidad {
+    gap: 30px;
+    padding: 20px; 
+    }
+  .imagen1 {
+    width: 100%; 
+  }
+
+   .item1 {
+    grid-column: 1/ span2 ;
+    grid-row: 1;
+    }
+    
+  .item2 {
+    grid-column:1/ span2;
+    grid-row: 2;
+    }
+
+  .item3 {
+    grid-column: 1/ span2;
+    grid-row: 3;
+    border: 2px solid #fff;  
+    }
+
+  .item4 {
+    grid-column: 1/ span2;
+    grid-row: 4;
+    }
+  
+  .item5{
+    grid-column: 1 / span2;
+    grid-row: 5;
+  }
+  .item6{
+    grid-column: 1 / span2;
+    grid-row: 6;
+    border: 2px solid #fff;
+  } 
+  }
+  
+/*Seccion Vigilancia*/
+
+.principal .vigilancia{
+  background: #E9ECF4;
+	color: #12203E;
+  text-align: center;
+	align-items: center;
+	justify-content: center;
+  padding-top: 90px;
+  
+ }
+ 
+.grid-container-vigilancia {
+  display: grid;
+  gap: 30px;
+  background-color: #E9ECF4;
+  padding: 20px;
+    
+  }
+  
+
+.item7 {
+  grid-column: 1;
+  grid-row: 1; 
+  }
+.item8 {
+  grid-column: 2;
+  grid-row: 1; 
+  }
+
+.item9 {
+  grid-column: 1;
+  grid-row: 2; 
+  }
+.item10 {
+  grid-column: 2;
+  grid-row: 2; 
+  }
+.item11 {
+  grid-column: 1;
+  grid-row: 3; 
+  }
+.item12 {
+  grid-column: 2;
+  grid-row: 3; 
+  }
+.imagen3 { /*imagen seccion vigilancia*/
+  width: 100%; 
+  max-height: 150px; 
+  object-fit: cover;
+  border: 2px solid #8a8686;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+  
+  }
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+    }
+    
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  }
+.grid-item {
+  position: relative;
+  }
+.grid-container-vigilancia .grid-item:hover img {
+  opacity: 0.2;
+  }
+.grid-item:hover .overlay {
+  opacity: 1;
+  }
+.grid-item img {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFF00; 
+    color: #12203E; 
+    text-decoration: none; 
+    border: 2px solid #12203E; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    }
+    
+  @media screen and (max-width: 600px) {
+    .item7 {
+      grid-column: 1;
+      grid-row: 1; 
+      }
+    .item8 {
+      grid-column: 1;
+      grid-row: 2; 
+      }
+    
+    .item9 {
+      grid-column: 1;
+      grid-row: 3; 
+      }
+    .item10 {
+      grid-column: 1;
+      grid-row: 4; 
+      }
+    .item11 {
+      grid-column: 1;
+      grid-row: 5; 
+      }
+    .item12 {
+      grid-column: 1;
+      grid-row: 6; 
+      }
+  }  
+
+/*Seccion Sobre Nosotros*/
+
+.sobre-nosotros {
+  background-color: #12203E;
+  color: white;
+  padding: 20px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: justify;
+  margin: 20px auto;
+  padding-top: 90px;
+  border-radius: 4px;
+  justify-content: center;
+}
+.sobre-nosotros h2 {
+   margin-bottom: 30px; 
+}
+.sobre-nosotros p {
+  font-family: 'Nunito Sans', sans-serif; 
+  font-size: 16px; 
+  line-height: 1.5; 
+  margin-bottom: 20px; 
+}
+.video {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  margin-top: 20px;
+  
+}
+ .video1 {
+  border: 2px solid #ffffff; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.video2 {
+  border: 2px solid #ffffff; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.video .video1,
+.video .video2 {
+  margin:20px; 
+}
+@media screen and (max-width: 600px){
+/*.sobre-nosotros {
+  padding-left: 20px;
+}*/
+.video {
+  justify-content: center;
+
+}}
+@media screen and (min-width: 1024px) {
+  .sobre-nosotros {
+    width: 70%;
+  }
+  .sobre-nosotros p{
+    padding: 30px 300px 30px 300px;
+    font-size: 25px;
+  }
+}
+
+
+
+/*pie de pagina codigo agregado damian*/
+
+#contacto {
+  padding-top: 60px;
+}
+.contacto {
+  display: grid;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .contacto {
+    width: 70%;
+    padding-left: 200px;
+    
+  }
+}
+.grid-redes-sociales {
+  grid-column: 1;
+  grid-row: 1;
+}
+.grid-formulario {
+  grid-column: 2;
+  grid-row: 1;
+}
+#redes-sociales {
+  height: 400px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  list-style: none;
+  padding-left: 40px;  
+}
+#redes-sociales a, 
+#formulario a {
+    text-decoration: none;
+    color: #12203E;
+    font-size: 1rem;
+    font-weight: 800;
+}  
+#redes-sociales h2, 
+#formulario h2{
+  font-size: 1.5rem;    
+  font-weight: 800;
+} 
+#formulario {
+    padding-top: 10px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+.text-right{
+    text-align: right;
+    
+}
+#redes-sociales a:hover, 
+#formulario a:hover{
+    transition: all ease 600ms;
+    transform: scale(1.3);
+}
+.input {
+    margin-right: 10px;
+    width: 180px;
+}
+#comentario {
+    width: 100%;
+}
+#enviar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFF00; 
+    color: #12203E; 
+    text-decoration: none; 
+    border: 2px solid #12203E; 
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 100px; 
+    margin-top: 10px;
+    
+}
+
+ 
+@media screen and (max-width: 750px) {
+ 
+ .grid-redes-sociales{
+    grid-column: 1;
+    grid-row:1;
+  }
+  .grid-formulario{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #redes-sociales h2 {
+    text-align: left;
+  }
+  #formulario{
+  font-size: 10px;
+  padding:20px;
+  }
+.input {
+  margin-bottom: 10px;
+  width: 100%;
+  }
+}
