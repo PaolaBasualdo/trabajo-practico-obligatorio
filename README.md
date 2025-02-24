@@ -37,7 +37,7 @@ Este sitio web ha sido desarrollado utilizando tecnologías modernas para garant
 Si tienes preguntas, sugerencias o deseas ponerte en contacto con el equipo del M.A.R.A., puedes enviarnos un correo electrónico a somoselmara@gmail.com o llenar el formulario de contacto en nuestro sitio web.
 
 ## Autores
-Damian Flores
+
 Paola Ivana Basualdo
 
 ## Agradecimientos
